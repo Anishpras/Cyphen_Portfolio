@@ -1,14 +1,36 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 const Home = () => {
   return (
     <div className="home">
-      <div className="home-top">
+      <div className="home_top">
         <p>{`<html>`}</p>
         <p>{`<body>`}</p>
       </div>
-      <div className="home_mid"></div>
-      <div className="home_bottom"></div>
+      <div className="home_mid">
+        <p>{`<h1/>`}</p>
+        <h1>Hi,</h1>
+        <h1>
+          We are
+          <span>
+            <img className="home_mid_logo" src={logo} alt="cyphen-logo" />
+          </span>
+          yphen,
+        </h1>
+        <h1>Team of web developers.</h1>
+        <h4>Full-stack developers | UI/UX designer</h4>
+        <p>{`</h1>`}</p>
+        <div className="home_mid_button">
+          <Link className="home_mid_contactButton" to="/contact">
+            Contact us!
+          </Link>
+        </div>
+      </div>
+      <div className="home_bottom">
+        <p>{`</html>`}</p>
+        <p>{`</body>`}</p>
+      </div>
     </div>
   );
 };
