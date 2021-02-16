@@ -1,0 +1,117 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+/* About top */
+.about_top {
+  p {
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+
+    margin-left: 3vw;
+    font-size: 18px;
+  }
+}
+.about_top p:nth-child(2) {
+  margin-left: 5vw;
+}
+/* About mid */
+.about_mid {
+  display: flex;
+  flex-direction: row;
+}
+.about_mid_left {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  width: 50vw;
+
+  p {
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+
+    margin-left: 2vw;
+    font-size: 18px;
+  }
+  h1 {
+    color: #cd5244;
+    font-family: "Oswald", sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    margin-left: 3vw;
+  }
+  h4 {
+    color: white;
+    margin-left: 3vw;
+    font-family: "Open Sans", sans-serif;
+
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 3px;
+  }
+}
+.about_mid_button {
+  color: #ff0000;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: 1px solid #ff0000;
+  margin-top: 25px;
+  float: left;
+  background-color: transparent;
+  white-space: nowrap;
+  font-weight: 400;
+  outline: none;
+  margin-left: 3vw;
+  cursor: pointer;
+}
+.about_mid_button:hover {
+  background-color: #cd5244;
+  color: white;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+// About mid right
+.about_mid_right {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+  width: 50vw;
+}
+// about right  info
+.about_mid_right_info {
+  margin-top: 6.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_mid_right_info_card_container{
+   background-color: white;
+    width: 40%;
+
+}
+.about_mid_right_profilePic {
+  width: 9rem;
+//   border-radius: 50px;
+}
+
+// About bottom
+.about_bottom {
+  margin-top: 15vh;
+  p {
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+
+    margin-left: 3vw;
+    font-size: 18px;
+  }
+}
+.about_bottom p:nth-child(2) {
+  margin-left: 5vw;
+}

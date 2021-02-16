@@ -28,8 +28,8 @@ const Home = () => {
         </div>
       </div>
       <div className="home_bottom">
-        <p>{`</html>`}</p>
         <p>{`</body>`}</p>
+        <p>{`</html>`}</p>
       </div>
     </div>
   );
