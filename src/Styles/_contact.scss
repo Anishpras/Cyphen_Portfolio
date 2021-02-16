@@ -15,6 +15,24 @@
 .contact_top p:nth-child(2) {
   margin-left: 5vw;
 }
+//Contact mid
+.contactForm {
+  margin-top: 15vh;
+  width: 90vw;
+}
+.contactForm_form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+.contactForm_input {
+  width: 100%;
+  border: 1px solid #ff0000;
+}
+.contactForm_top {
+  display: flex;
+}
+// Contact Bottom
 
 .contact_bottom {
   margin-top: 15vh;

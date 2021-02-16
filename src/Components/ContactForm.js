@@ -48,73 +48,84 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact">
-      <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
-        <input
-          type="text"
-          name="name"
-          ref={register({
-            required: {
-              value: true,
-              message: "Please enter your name",
-            },
-            maxLength: {
-              value: 30,
-              message: "Please use 30 characters or less",
-            },
-          })}
-          className="contactForm_input"
-          placeholder="Name"></input>
-        {errors.name && (
-          <span className="errorMessage">{errors.name.message}</span>
-        )}
+    <div className="contactForm">
+      <form
+        className="contactForm_form"
+        id="contact-form"
+        onSubmit={handleSubmit(onSubmit)}
+        noValidate>
+        <div className="contactForm_main">
+          <div className="contactForm_top">
+            <input
+              type="text"
+              name="name"
+              ref={register({
+                required: {
+                  value: true,
+                  message: "Please enter your name",
+                },
+                maxLength: {
+                  value: 30,
+                  message: "Please use 30 characters or less",
+                },
+              })}
+              className="contactForm_input"
+              placeholder="Name"></input>
+            {errors.name && (
+              <span className="errorMessage">{errors.name.message}</span>
+            )}
 
-        <input
-          type="email"
-          name="email"
-          ref={register({
-            required: true,
-            pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-          })}
-          className="contactForm_input"
-          placeholder="Email address"></input>
-        {errors.email && (
-          <span className="errorMessage">
-            Please enter a valid email address
-          </span>
-        )}
-
-        <input
-          type="text"
-          name="subject"
-          ref={register({
-            required: {
-              value: true,
-              message: "Please enter a subject",
-            },
-            maxLength: {
-              value: 75,
-              message: "Subject cannot exceed 75 characters",
-            },
-          })}
-          className="contactForm_input"
-          placeholder="Subject"></input>
-        {errors.subject && (
-          <span className="errorMessage">{errors.subject.message}</span>
-        )}
-
-        <textarea
-          rows={3}
-          name="message"
-          ref={register({
-            required: true,
-          })}
-          className="contactForm_input"
-          placeholder="Message"></textarea>
-        {errors.message && (
-          <span className="errorMessage">Please enter a message</span>
-        )}
-
+            <input
+              type="email"
+              name="email"
+              ref={register({
+                required: true,
+                pattern: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              })}
+              className="contactForm_input"
+              placeholder="Email address"></input>
+            {errors.email && (
+              <span className="errorMessage">
+                Please enter a valid email address
+              </span>
+            )}
+          </div>
+          <div className="contactForm_sub">
+            {" "}
+            <input
+              type="text"
+              name="subject"
+              ref={register({
+                required: {
+                  value: true,
+                  message: "Please enter a subject",
+                },
+                maxLength: {
+                  value: 75,
+                  message: "Subject cannot exceed 75 characters",
+                },
+              })}
+              className="contactForm_input"
+              placeholder="Subject"></input>
+            {errors.subject && (
+              <span className="errorMessage">{errors.subject.message}</span>
+            )}
+          </div>
+          <div className="contactForm_area">
+            {" "}
+            <textarea
+              rows={3}
+              name="message"
+              ref={register({
+                required: true,
+              })}
+              className="contactForm_input"
+              placeholder="Message"></textarea>
+            {errors.message && (
+              <span className="errorMessage">Please enter a message</span>
+            )}
+          </div>
+        </div>
         <button
           className="contactForm_button"
           disabled={disabled}
