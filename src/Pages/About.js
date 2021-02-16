@@ -13,7 +13,7 @@ const About = () => {
           <h1>About us</h1>
           <p> {`</h1>`}</p>
           <h4>
-            We are a team of professionally connected with the web development
+            We are a team of professionals connected with the web development
             industry and information technology for many years.
           </h4>
           <h4>
@@ -28,7 +28,7 @@ const About = () => {
             <button className="about_mid_button">Meet the Team</button>
           </div>
         </div>
-        <div className="about_mid_right">
+        {/* <div className="about_mid_right">
           <div className="about_mid_right_info">
               <div className="about_mid_right_info_card_container">
             <img className="about_mid_right_profilePic" src={Anish} alt="" />
@@ -37,7 +37,7 @@ jhadkljsdl;fl;dkg;lfkg;kh;tkhlojijfbkfjhkhghrlgirgjlerjtoieufojreifherkghleighor
             </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="about_bottom">
         <p>{`</body>`}</p>

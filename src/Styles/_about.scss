@@ -48,7 +48,7 @@
 
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 1rem;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 3px;
   }
@@ -75,6 +75,7 @@
   color: white;
   transition: 0.5s;
   border-radius: 15px;
+  border: 1px solid white;
 }
 // About mid right
 .about_mid_right {
@@ -91,14 +92,13 @@
   justify-content: center;
   align-items: center;
 }
-.about_mid_right_info_card_container{
-   background-color: white;
-    width: 40%;
-
+.about_mid_right_info_card_container {
+  background-color: white;
+  width: 40%;
 }
 .about_mid_right_profilePic {
   width: 9rem;
-//   border-radius: 50px;
+  //   border-radius: 50px;
 }
 
 // About bottom

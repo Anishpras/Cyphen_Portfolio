@@ -1,0 +1,31 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+}
+.contact_top {
+  p {
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+
+    margin-left: 3vw;
+    font-size: 18px;
+  }
+}
+.contact_top p:nth-child(2) {
+  margin-left: 5vw;
+}
+
+.contact_bottom {
+  margin-top: 15vh;
+  p {
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+
+    margin-left: 3vw;
+    font-size: 18px;
+  }
+}
+.contact_bottom p:nth-child(2) {
+  margin-left: 5vw;
+}

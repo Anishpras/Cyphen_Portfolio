@@ -13,5 +13,109 @@ $link-color: #36d5bb;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 10px;
+}
+.sidebar_logo {
+  position: fixed;
+  width: 3.5rem;
+}
+
+.sidebar_icon {
+  box-sizing: border-box;
+  width: 3.5rem;
+  height: 40vh;
+  margin-top: 30vh;
+}
+
+/*icon*/
+.homeicons {
+  position: absolute;
+
+  width: 30px;
+  margin-left: 10px;
+}
+
+//nav
+
+*,
+*::after,
+*::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+nav a {
+  font-size: 20px;
+  color: #a5a5a5;
+  margin-bottom: 15px;
+  display: block;
+  // line-height: 51px;
+  height: 51px;
+  width: 4vw;
+  text-decoration: none;
+}
+nav a :hover {
+  opacity: 0;
+}
+
+nav a div {
+  display: flex;
+  width: 100%;
+}
+
+.homeicons::before {
+  content: "";
+}
+nav a:first-child:after {
+  content: "HOME";
+  margin-left: 5px;
+}
+nav a:first-child + a:after {
+  content: "ABOUT";
+}
+nav a:first-child + a + a:after {
+  content: "SKILLS";
+}
+nav a:first-child + a + a + a:after {
+  content: "CONTACT";
+  font-size: 10px;
+}
+nav a:first-child + a + a + a + a:after {
+  content: "WORK";
+  font-size: 15px;
+}
+nav a:after {
+  content: "";
+  font-size: 15px;
+  letter-spacing: 2px;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+nav a:hover:after {
+  opacity: 1;
+}
+
+.sidebar-all-icons {
+  position: absolute;
+  display: block;
+  width: 3.8rem;
+  height: 3.8rem;
+  box-sizing: border-box;
+  margin-left: 2px;
+  align-items: center;
+}
+.abouticon {
+  margin-left: 10px;
+  height: 2rem;
+}
+.skillsicon {
+  margin-left: 10px;
+  height: 2rem;
 }
