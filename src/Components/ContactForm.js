@@ -62,7 +62,7 @@ const ContactForm = () => {
               ref={register({
                 required: {
                   value: true,
-                  message: "Please enter your name",
+                  message: "",
                 },
                 maxLength: {
                   value: 30,
@@ -86,7 +86,6 @@ const ContactForm = () => {
               placeholder="Email address"></input>
             {errors.email && (
               <span className="errorMessage">
-                Please enter a valid email address
               </span>
             )}
           </div>
@@ -122,7 +121,7 @@ const ContactForm = () => {
               className="contactForm_input"
               placeholder="Message"></textarea>
             {errors.message && (
-              <span className="errorMessage">Please enter a message</span>
+              <span className="errorMessage"></span>
             )}
           </div>
         </div>

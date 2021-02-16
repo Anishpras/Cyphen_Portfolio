@@ -9,6 +9,9 @@ const Contact = () => {
         <p>{`<body>`}</p>
       </div>
       <div className="contact_mid">
+      <p> {`<h1>`}</p>
+      <h1>CONTACT US</h1>
+      <p> {`</h1>`}</p>
         <ContactForm />
       </div>
       <div className="contact_bottom">
